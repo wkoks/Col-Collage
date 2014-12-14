@@ -1,0 +1,26 @@
+<% provide(:title, "Home") %>
+
+<div class="center jumbotron">
+  <h1>Welcome to the Col-Collage</h1>
+  <h2>
+    This is the home page motherfuckers!
+  </h2>
+
+  <% if !user_signed_in? %>
+        <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
+
+      <h3>
+        <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn-lg btn-primary" %>
+        <%= link_to "Sign in with Vkontakte", '#', class: "btn btn-lg btn-primary" %>
+      </h3>
+  <% else %>
+      <h33>
+        Hello, my dear <%=  current_user.email.split('@')[0] %>
+      </h33>
+   <% end %>
+
+  <%#= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn-lg btn-primary" %>
+  <%#= link_to "Sign in with Vkontakte", user_omniauth_authorize_path(:vkontakte), class: "btn btn-lg btn-primary" %>
+
+</div>
+

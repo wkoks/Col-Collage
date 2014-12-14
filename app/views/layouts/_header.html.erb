@@ -1,0 +1,20 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "Col-Collage", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav pull-right">
+        <li><%= link_to "Home",   root_path %></li>
+
+        <li><%= link_to "About", about_path %></li>
+        <% if user_signed_in? %>
+            <li><%= link_to "Hello, my dear",   edit_user_registration_path %></li>
+            <li><%= current_user.email %></li>
+            <li><%= link_to "Log out", destroy_user_session_path, :method => :delete %></li>
+        <% else %>
+            <li><%= link_to "Log in", new_user_session_path %></li>
+        <% end %>
+
+      </ul>
+    </nav>
+  </div>
+</header>
