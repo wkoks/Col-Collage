@@ -1,12 +1,13 @@
 ColCollage::Application.routes.draw do
 
   root 'static_pages#home'
-
-  get 'about' =>'static_pages#about'
-
-
+  get 'about' => 'static_pages#about'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
+
+
+
+  resources :users, :only => [:show, :index]
 
 
   # The priority is based upon order of creation: first created -> highest priority.

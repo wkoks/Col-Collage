@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
+  letter-spacing: -4.5px;
   margin-bottom: 30px;
   text-align: center;
   color: red;
@@ -45,7 +45,7 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -59,7 +59,7 @@ p {
 
 h33{
   font-size: 2.2em;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
@@ -73,7 +73,7 @@ h33{
   font-size: 1.7em;
   color: red;
   text-transform: uppercase;
-  letter-spacing: -0.5px;
+  letter-spacing: -2px;
   padding-top: 9px;
   font-weight: bold;
 }
@@ -93,10 +93,12 @@ footer {
   a {
     color: #555;
     &:hover {
-      color: #ffffff;
+      color: #B00100;
     }
   }
   small {
+    font-size: 0.95em;
+    color: #555;
     float: left;
   }
   ul {
@@ -105,6 +107,92 @@ footer {
     li {
       float: left;
       margin-left: 15px;
+    }
+  }
+}
+
+.sign-up-fb {
+  color: #EEE;
+  background-color: #2E2F30;
+  border-color: #666;
+  &:hover {
+    background-color: #3A5795;
+    border-color: #2E2F30;
+  }
+}
+
+.sign-up-st{
+  color: #EEE;
+  background-color: #2E2F30;
+  border-color: #666;
+  &:hover {
+    background-color: #777777;
+    border-color: #2E2F30;
+  }
+}
+
+.sign-up-tw{
+  color: #EEE;
+  background-color: #2E2F30;
+  border-color: #666;
+  &:hover {
+    background-color: #3B88C3;
+    border-color: #2E2F30;
+  }
+}
+
+.sign-up-vk{
+  color: #EEE;
+  background-color: #2E2F30;
+  border-color: #666;
+  &:hover {
+    background-color: #2B587A;
+    border-color: #2E2F30;
+  }
+}
+
+/* sidebar */
+
+aside {
+  section {
+    padding: 10px 0;
+    border-top: 1px solid lightgray;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid lightgray;
+    &:last-child {
+      border-bottom: 1px solid lightgray;
     }
   }
 }

@@ -259,7 +259,8 @@ Devise.setup do |config|
 
   #Add your ID and secret here
   #ID first, secret second
-  config.omniauth :facebook, '883818048319387', '7983f470a6418c99a13fcbf831a8bc89'
-  config.omniauth :vkontakte, 'APP_ID', 'APP_SECRET'
+  config.omniauth :facebook,    '883818048319387', '7983f470a6418c99a13fcbf831a8bc89'
+  config.omniauth :vkontakte,   '4681458 ', 'g1wEwH13tqsDy0gbffVi'
+  config.omniauth :twitter,     'BYQxcQx4eRatKsX8gTEk09vrF', 'fP8ULWEs4U2rlKEP6kBjTqfP76ePtA5k9EXykjD50JU0xQKDvG'
 
 end
